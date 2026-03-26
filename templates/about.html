@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Baybayin</title>
+        <link rel="stylesheet" type="text/css" href="static/css/about.css">
+    </head>
+    <body>
+        <nav class="container">
+            <a href="{{ url_for('home') }}" class="brand">
+                <img src="static/images/logo.png">
+                BaybaySalin
+            </a>
+        <div class="menu">
+                <a href="{{ url_for('home') }}">HOME</a>
+                <a class="#">ABOUT</a>
+                <a href="{{ url_for('contact') }}">CONTACTS</a>
+        </div>
+        </nav>
+        <div class="alt">
+                <a href="{{ url_for('home') }}">HOME</a>
+                <a class="activealt">ABOUT</a>
+                <a href="contact.html">CONTACT</a>
+        </div>
+        <main class="container">
+            <div class="info mainpage">
+                    <h1 class="text-center">WHAT IS BayBayinSalin?</h1>
+                    <p class="step">An application in fulfillment to a thesis titled “Baybaysalin: A Multi-Dialect Baybayin Image to Text Converter Using Speeded Up Robust Features and Convolutional Neural Network”</p>
+                    
+                    <div style="height: 10px;"></div>
+                    <h1 class="text-center">WHAT WE ARE</h1>
+                    <p class="step">Baybaysalin is a multi-dialect Baybayin image to text converter system that uses Speeded-Up Robust Features (SURF) algorithm and Convolutional Neural Network (CNN). The system is aimed to help users in recognizing Baybayin characters in its different forms: Tagalog, Tagbanwa, and Hanunuo. It does this by having an image with Baybayin characters as an input to the system. Individual Baybayin characters will then be recognized and separated from the images. This will then go through SURF for detecting the features of the characters and passing it through the CNN model for categorizing those characters into their respective dialect (Tagalog, Tagbanwa, Hanunuo) and equivalent Filipino letters. The researchers aim to help the people in understanding Baybayin by having an application that can be used to take a photo of a Baybayin word and then getting the Baybayin dialect and its equivalent word written in Filipino Alphabet. This gives an emphasis and importance on the Filipino culture by making it easier to understand the writing system developed by the Filipino ancestors.  The study uses a confusion matrix to determine the results for recognizing the dialect and having a correct output of words. All of the dialect models have a higher count of True Positive (TP) than the True Negative (TN), which means most of the time it correctly recognizes the dialect and outputs the correct converted word. The accuracy of the dialect detection and word conversion were both separated. For dialect detection, the Hanunuo model gets the highest accuracy of 89.87%. Next is the Tagalog model with an accuracy of 76.71%, and the Tagbanwa model with an accuracy of 76.01%. For the system conversion of the word, the Tagalog model has the highest accuracy of 51.14%. Next is the Tagbanwa model with an accuracy of 51.01% and last is the Hanunuo model with an accuracy of 48.86%.  </p>
+                    
+                    <div style="height: 10px;"></div>
+                    <h1 class="text-center">HOW TO USE BayBayinSalin?</h1>
+                    <p class="step"><font class="num">&#10102;</font>&nbsp;&nbsp;
+                    Choose a Hanunuo, Tagbanwa, or Tagalog word to convert.</p>
+                    <p class="step"><font class="num">&#10103;</font>&nbsp;&nbsp;
+                    Click "Upload a photo" icon to upload the word you want to convert.</p>
+                    <p class="step"><font class="num">&#10104;</font>&nbsp;&nbsp;
+                    Wait for the detected dialect and corresponding converted word.</p>
+                    
+                    <div style="height: 10px;"></div>
+                    <h1 class="text-center">WHERE TO ACCESS BayBayinSalin?</h1>
+                    <p class="step">BaybaySalin can easily be accessed on any browser. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+            </div>
+        </main>
+        <footer>
+            <p>BayBayinSalin.org - All rights reserved 2021</p>
+        </footer>
+        <script src="static/js/lib/jquery-3.5.1.min.js"></script>
+        <script src="static/js/index.js"></script>
+    </body>
+</html>

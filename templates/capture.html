@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>BaybaySalin</title>
+        <link rel="stylesheet" type="text/css" href="static/css/capture.css">
+    </head>
+    <body>
+        <nav class="container">
+            <a href="#" class="brand">
+                <img src="static/images/logo.png">
+                BaybaySalin
+            </a>
+            <div class="menu">
+                <a href="{{ url_for('about') }}">ABOUT</a>
+                <a href="{{ url_for('contact') }}">CONTACTS</a>
+            </div>
+        </nav>
+        <div class="alt">
+            <a href="#">ABOUT</a>
+            <a href="#">FAQS</a>
+            <a href="#">CONTACTS</a>
+        </div>
+        <main class="container">
+            <div class="info">
+                <h1 style="text-align: center;">BaybaySalin</h1>
+                <p>A dialect converter from Baybayin, Hanunuo, or Tagbanwa to Filipino text</p>
+            </div>
+            <form action="/" method="post" enctype="multipart/form-data" class="upload-card">
+                <h1>UPLOAD PHOTO</h1>
+                <p>The file should be a png, jpg, jpeg or a gif</p>
+                <input type="file" name="img" id="uploadButton" accept="image/*">
+                <input type="submit" id="submitButton">
+                <label class="upload-button" for="uploadButton">
+                    <img src="test.jpg" class="preview">
+                    <img src="static/images/folder.png" class="icon">
+                    <p>Click to upload photo</p>
+                </label>
+                <label class="upload-btn" for="submitButton">
+                    <img src="static/images/upload.png">
+                </label>
+                <a type="button" class="delete-button">
+                    <img src="static/images/close.png">
+                </a>
+            </form>
+        </main>
+
+        <script src="static/js/lib/jquery-3.5.1.min.js"></script>
+        <script src="static/js/index.js"></script>
+    </body>
+</html>

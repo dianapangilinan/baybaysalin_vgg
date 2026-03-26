@@ -1,0 +1,335 @@
+@font-face {
+    font-family: 'Bogart';
+    src: url('Bogart.ttf');
+}
+@font-face {
+    font-family: 'Cenzo';
+    src: url('Cenzo.otf');
+}
+html, body {
+    position: relative;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    user-select: none;
+    font-family: Cenzo;
+    /*background-image: url("static/images/bg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    */
+}
+input[type="file"] {
+    display: none;
+}
+input[type="submit"] {
+    display: none;
+}
+.container {
+    padding-left: 6%;
+    padding-right: 6%;
+}
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #ff3d3d;
+    padding-top: 1rem;
+    padding-bottom: .50rem;
+}
+nav .menu {
+    display: block;
+}
+nav .brand {
+    display: flex;
+    align-items: center;
+    font-size: 4rem;
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+}
+nav .brand img {
+    width: 96px;
+    image-rendering: pixelated;
+}
+nav .menu a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: 600;
+    padding: 1rem;
+}
+.active{
+    border-bottom: 5px solid #FFF;
+}
+.activealt{
+    border-bottom: 5px solid #ff3d3d;
+}
+nav .menu a:hover {
+    background: #fff;
+    color: #ff3d3d;
+}
+nav .menu a:last-child {
+    margin-right: 0;
+}
+.alt {
+    display: none;
+    text-align: center;
+    border-bottom: 1px solid #f0f0f0;
+    width: 100%;
+    margin-bottom: 3rem;
+}
+.alt a {
+    text-decoration: none;
+    color: #666;
+    padding: 1rem;
+    display: inline-block;
+}
+.alt a:hover {
+    background: #ff3d3d;
+    color: #fff;
+}
+.upload-card {
+    display: block;
+    margin: auto;
+    border-radius: 2rem;
+    background: #fff;
+    font-family: Arial;
+    padding: 2.5rem;
+    z-index: 999;
+    text-align: center;
+    width: 420px;
+    max-width: 420px;
+    position: relative;
+}
+.upload-card h1 {
+    color: #333;
+    margin-bottom: 0;
+    font-size: 3rem;
+    line-height: 1;
+    font-weight: normal;
+}
+.upload-card p {
+    font-size: 15px;
+    font-weight: 600;
+    color: #777;
+    margin-bottom: 2rem;
+}
+.upload-card .upload-button {
+    background: #fff8f8;
+    display: block;
+    overflow: hidden;
+    border: 5px dashed #ff8b8b;
+    padding: 2rem 0;
+    border-radius: 2rem;
+    cursor: pointer;
+    position: relative;
+    width: 100%;
+    height: 250px;
+}
+.upload-card .upload-button {
+    background: #fff8f8;
+    display: block;
+    overflow: hidden;
+    border: 5px dashed #ff8b8b;
+    padding: 2rem 0;
+    border-radius: 2rem;
+    cursor: pointer;
+    position: relative;
+    width: 100%;
+    height: 250px;
+}
+.upload-card label.upload-btn {
+    display: none;
+    text-decoration: none;
+    height: 40px;
+    position: absolute;
+    top: 12rem;
+    right: 6rem;
+    z-index: 999;
+    border-radius: .50rem;
+    background: rgba(255, 255, 255, .9);
+    border: 2px solid #9052bc;
+}
+.upload-card a.delete-button {
+    display: none;
+    text-decoration: none;
+    height: 40px;
+    position: absolute;
+    top: 12rem;
+    right: 3rem;
+    z-index: 999;
+    border-radius: .50rem;
+    background: rgba(255, 255, 255, .9);
+    border: 2px solid #9052bc;
+}
+.upload-card label.upload-btn img {
+    padding: .25rem;
+    width: 32px;
+}
+.upload-card a.delete-button img {
+    padding: .25rem;
+    width: 32px;
+}
+.upload-card .upload-button:hover {
+    border: 5px dashed #ff4d4d;
+}
+.upload-card .upload-button .icon {
+    width: 50%;
+}
+footer {
+    padding: 1.5rem 0;
+}
+footer p {
+    text-align: center;
+    color: gray;
+    margin: 0;
+}
+.info {
+    display: block;
+    margin: auto;
+    width: max-content;
+    background: #fff;
+
+    padding: .50rem 1.5rem;
+}
+.info h1 {
+    color: #ff3d3d;
+}
+.info p {
+    color: #444;
+}
+@media only screen and (max-width: 962px) {
+    nav .brand {
+
+    }
+    nav .menu {
+        display: none;
+    }
+    .alt {
+        display: block;
+    }
+    .info {
+        text-align: center;
+        display: block;
+        width: 100%;
+        margin: unset;
+        padding: 0;
+    }
+    .upload-card h1 {
+        font-size: 2rem;
+    }
+    .upload-card p {
+        font-size: .85rem;
+    }
+    .upload-card {
+        width: 320px;
+    }
+}
+.upload-card 
+.upload-button 
+.preview {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    object-fit: cover;
+    z-index: 555;
+}
+.upload-card.shown 
+.upload-button 
+.preview {
+    display: block;
+}
+.upload-card.shown 
+.upload-button
+p, 
+.upload-card.shown 
+.upload-button.icon {
+    display: none;
+}
+.upload-card.shown 
+label.upload-btn {
+    pointer-events: all;
+    cursor: pointer;
+    display: block;
+    z-index: 999;
+}
+.upload-card.shown 
+a.delete-button {
+    pointer-events: all;
+    cursor: pointer;
+    display: block;
+    z-index: 999;
+}
+.text-center{
+    text-align: center;
+    vertical-align: middle;
+}
+.num {
+    font-size: 30px;
+}
+.step {
+    font-size: 18px;
+}
+.backred {
+    background-color: #ff3d3d;
+    font-size: 18px;
+    color: #fff;
+}
+.mainpage {
+    width: 80%;
+    margin: auto auto 0px auto;
+    min-height: 50%;
+}
+.mainpagein {
+    width: 80%;
+    margin: auto auto 0px auto;
+    min-height: 50%;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    min-height: 150px;
+    text-align: justify;
+}
+.imagef {
+    float: left;
+    padding-right: 20px;
+    padding-bottom: 20px;
+}
+.dev {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+}
+.devname {
+    color: #FFDE59;
+    font-size: 22px;
+    font-weight: bold;
+}
+.nodecor {
+    text-decoration: none;
+}
+.j-div {
+  overflow: hidden;
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.j-icon  {
+  display:inline-block;
+  vertical-align:middle;
+  height: 30px;
+  padding-right: 20px;
+  padding-bottom: 10px;
+}
+.icons {
+  width: 45px;  
+  height: 45px;  
+}
+.img-span {
+  display:inline-block;
+  margin-top: 16px;
+}

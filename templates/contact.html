@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Baybayin</title>
+        <link rel="stylesheet" type="text/css" href="static/css/capture.css">
+    </head>
+    <body>
+        <nav class="container">
+            <a href="{{ url_for('home') }}" class="brand">
+                <img src="static/images/logo.png">
+                BaybaySalin
+            </a>
+        <div class="menu">
+                <a href="{{ url_for('home') }}">HOME</a>
+                <a href="{{ url_for('about') }}">ABOUT</a>
+                <a class="#">CONTACTS</a>
+        </div>
+        </nav>
+        <div class="alt">
+                <a href="{{ url_for('home') }}">HOME</a>
+                <a href="{{ url_for('about') }}">ABOUT</a>
+                <a class="{{ url_for('contact') }}">CONTACT</a>
+        </div>
+       <main class="container">
+            <div class="info text-center">
+                <h1>CONTACT US</h1>
+                <p class="step">From the Thesis titled “Baybaysalin: A Multi-Dialect Baybayin Image to Text Converter Using Speeded Up Robust Features and Convolutional Neural Network”</p>
+            </div>
+            <div class="mainpage backred text-center">
+                <div class="mainpagein">
+                    <div class="j-div">
+                        <span class="img-span">
+                            <img src="static/images/mail.png" class="j-icon">
+                        </span>
+                        <a class="nodecor" href="#">loremipsum@gmail.com</a>
+                    </div>
+                    <div class="j-div">
+                        <span class="img-span">
+                            <img src="static/images/fb.png" class="j-icon icons">
+                        </span>
+                        <a class="nodecor" href="#">loremipsum@gmail.com</a>
+                    </div>
+                    <div class="j-div">
+                        <span class="img-span">
+                            <img src="static/images/twitter.png" class="j-icon icons">
+                        </span>
+                        <a class="nodecor" href="#">loremipsum@gmail.com</a>
+                    </div>
+                </div>
+            </div>
+            <div class="info text-center">
+                <h1>DEVELOPERS</h1>
+            </div>
+            <div class="mainpage backred">
+                <div class="mainpagein">
+                    <p><img class="imagef dev" src="static/images/dev1.png">
+                       <font class="devname"><b>Trishia Ann G. Cabuang</b></font>
+                       <div style="height: 2px;"></div>
+                       <b>Trishia Ann G. Cabuang</b> is a fourth-year student taking Bachelor of Science in Computer Science at the Polytechnic University of the Philippines. She is adequate in prominent skills like Python, HTML, PHP, and CSS. She is currently a Search Engine Optimization (SEO) specialist at Local Digital Experts, a small company based in the United States. 
+                    <br>
+                    <br>Email Address: trish@localdigitalexperts.com
+                    <br>Phone Number: 0995 453 2395
+                    <br>Address: Pasay City, Philippines</p>
+                </div>
+            </div>
+            <div style="height: 15px;"></div>
+            <div class="mainpage backred">
+                <div class="mainpagein">
+                    <p><img class="imagef dev" src="static/images/dev1.png">
+                       <font class="devname"><b>Ervic G. Padilla</b></font>
+                       <div style="height: 2px;"></div>
+                       <b>Ervic G. Padilla</b> is a fourth-year student taking Bachelor of Science in Computer Science at the Polytechnic University of the Philippines. He has a background in C, Java, Python, HTML, CSS, MySQL as well as basic knowledge in Linux. Currently dabbing on web development to pursue a career in this path. 
+                    <br>
+                    <br>Email Address: apical.drivel@gmail.com
+                    <br>Phone Number: 0998 381 7617
+                    <br>Address: Nueva Ecija, Philippines<br></p>
+                </div>
+            </div>
+            <div style="height: 15px;"></div>
+            <div class="mainpage backred">
+                <div class="mainpagein">
+                    <p><img class="imagef dev" src="static/images/dev1.png">
+                       <font class="devname"><b>Diana C. Pangilinan</b></font>
+                       <div style="height: 2px;"></div>
+                       <b>Diana C. Pangilinan</b> is a fourth-year student taking Bachelor of Science in Computer Science at the Polytechnic University of the Philippines. She is adequate in prominent skills like Python, HTML, PHP, and CSS. She is currently a Search Engine Optimization (SEO) specialist at Local Digital Experts, a small company based in the United States. 
+                    <br>
+                    <br>Email Address: dcpangilinan@iskolarngbayan.pup.edu.ph
+                    <br>Phone Number: 0929 663 9911
+                    <br>Address: Caloocan City<br></p>
+                </div>
+            </div>
+            <div style="height: 15px;"></div>
+            <div class="mainpage backred">
+                <div class="mainpagein">
+                    <p><img class="imagef dev" src="static/images/dev1.png">
+                       <font class="devname"><b>Dionisio B. Torres</b></font>
+                       <div style="height: 2px;"></div>
+                       <b>Dionisio B. Torres</b> is a fourth-year student taking Bachelor of Science in Computer Science at the Polytechnic University of the Philippines. He has background knowledge in Java, C, and Python programming languages, but is more interested in using Python for developing programs. He is an intern at NPVN Learning Programs Co., learning web development. 
+                    <br>
+                    <br>Email Address: dionisio.torres.904@gmail.com
+                    <br>Phone Number: 0919 228 7749
+                    <br>Address: Pasig City, Philippines<br></p>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <p>BayBayinSalin.org - All rights reserved 2021</p>
+        </footer>
+        <script src="static/js/lib/jquery-3.5.1.min.js"></script>
+        <script src="static/js/index.js"></script>
+    </body>
+</html>

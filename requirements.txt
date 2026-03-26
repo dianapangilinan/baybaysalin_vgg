@@ -1,0 +1,7 @@
+flask
+tensorflow-cpu
+tf-keras
+numpy
+opencv-python-headless
+imutils
+pillow
