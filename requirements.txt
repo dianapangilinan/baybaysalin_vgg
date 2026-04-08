@@ -1,6 +1,5 @@
 flask
-tensorflow-cpu
-tf-keras
+onnxruntime
 numpy
 opencv-python-headless
 imutils
